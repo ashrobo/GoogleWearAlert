@@ -6,7 +6,7 @@ An Android Wear style confirmation view for iOS - Written in Swift
 This library is not intended as fully fledged alert view replacement (it has no buttons) this confirmation view is ideal 
 for giving a success/fail/done/posted etc confirmation to the user.
 
-The view has a number of customisations and you're welcome to tweak the constants to adjusts the look/size/colors etc.
+The view has a number of customisations and you're welcome to tweak the constants to adjust the look/size/colors etc.
 
 There are 4 different types already set up for you: Success, Error, Warning, Message (take a look at the screenshots)
 
