@@ -21,8 +21,6 @@ Drag the "GoogleWearAlertView" folder from the example project into your project
 To show notifications use the following code:
 --------
 
-Swift
-
 ```objective-c
 
 //Basic init
@@ -36,6 +34,8 @@ GoogleWearAlert.showAlert(title: "Message", image: nil, type: .Message, duration
 
 //If using the basic init, it's recommended you set the default controller to present the alert in first
 GoogleWearAlert.setDefaultViewController(self)
+
+```
 
 The following properties can be set:
 
