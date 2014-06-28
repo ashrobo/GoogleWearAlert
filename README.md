@@ -16,6 +16,10 @@ Follow the developer on Twitter: (http://twitter.com/a2hgo) (Ash Robinson)
 
 ![alt tag](http://i1058.photobucket.com/albums/t417/A2HGO/GoogleAlert.gif)
 
+![alt tag](http://i1058.photobucket.com/albums/t417/A2HGO/Success.gif)
+![alt tag]()
+![alt tag]()
+![alt tag]()
 
 
 ## Installation
