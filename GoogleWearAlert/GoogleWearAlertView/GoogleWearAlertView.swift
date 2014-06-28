@@ -103,9 +103,9 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
         setTranslatesAutoresizingMaskIntoConstraints(false)
         frame.size = CGSizeMake(viewController.view.bounds.size.width * alertViewSize, viewController.view.bounds.width * alertViewSize)
         layer.cornerRadius = self.frame.width/2
-        self.layer.shadowColor = UIColor.grayColor().CGColor
+        self.layer.shadowColor = UIColor.blackColor().CGColor
         self.layer.shadowOffset = CGSizeMake(0, 0)
-        self.layer.shadowOpacity = 0.5
+        self.layer.shadowOpacity = 0.8
         self.clipsToBounds = false
         
         // Setup Image View
