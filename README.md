@@ -23,11 +23,19 @@ To show notifications use the following code:
 
 Swift
 
-Basic init -      GoogleWearAlert.showAlert(title: "Success", type: .Success)
-Convenience init- GoogleWearAlert.showAlert(title:"Error", image:nil, type: .Error, duration: 2.0, inViewController: self)
-Full init -       GoogleWearAlert.showAlert(title: "Message", image: nil, type: .Message, duration: 2.0, inViewController: self, atPostion: .Bottom, canBeDismissedByUser: true)
+```objective-c
 
-If using the basic init, it's recommended you set the default controller to present the alert in first - GoogleWearAlert.setDefaultViewController(self)
+//Basic init
+GoogleWearAlert.showAlert(title: "Success", type: .Success)
+
+//Convenience init
+GoogleWearAlert.showAlert(title:"Error", image:nil, type: .Error, duration: 2.0, inViewController: self)
+
+//Full init      
+GoogleWearAlert.showAlert(title: "Message", image: nil, type: .Message, duration: 2.0, inViewController: self, atPostion: .Bottom, canBeDismissedByUser: true)
+
+//If using the basic init, it's recommended you set the default controller to present the alert in first
+GoogleWearAlert.setDefaultViewController(self)
 
 The following properties can be set:
 
