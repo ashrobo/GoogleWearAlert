@@ -15,6 +15,9 @@ There are 4 different types already set up for you: Success, Error, Warning, Mes
 Follow the developer on Twitter: (http://twitter.com/a2hgo) (Ash Robinson)
 
 ![alt tag](http://i1058.photobucket.com/albums/t417/A2HGO/GoogleAlert.gif)
+
+
+
 ## Installation
 
 Drag the "GoogleWearAlertView" folder from the example project into your project. This library requires ARC.
