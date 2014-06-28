@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF7547D8195EE01C0072C69E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7547D7195EE01C0072C69E /* AppDelegate.swift */; };
+		EF7547DF195EE01C0072C69E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7547DE195EE01C0072C69E /* Images.xcassets */; };
+		EF7547EB195EE01C0072C69E /* GoogleWearAlertTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7547EA195EE01C0072C69E /* GoogleWearAlertTests.swift */; };
+		EF7547FC195EE02F0072C69E /* GoogleWearAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7547F5195EE02F0072C69E /* GoogleWearAlert.swift */; };
+		EF7547FD195EE02F0072C69E /* GoogleWearAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7547F6195EE02F0072C69E /* GoogleWearAlertView.swift */; };
+		EF7547FE195EE02F0072C69E /* errorIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7547F8195EE02F0072C69E /* errorIcon@2x.png */; };
+		EF7547FF195EE02F0072C69E /* messageIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7547F9195EE02F0072C69E /* messageIcon@2x.png */; };
+		EF754800195EE02F0072C69E /* successIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7547FA195EE02F0072C69E /* successIcon@2x.png */; };
+		EF754801195EE02F0072C69E /* warningIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EF7547FB195EE02F0072C69E /* warningIcon@2x.png */; };
+		EF754803195EE03C0072C69E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF754802195EE03C0072C69E /* ViewController.swift */; };
+		EF754805195EE0480072C69E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF754804195EE0480072C69E /* Main.storyboard */; };
+		EF754807195EE0510072C69E /* Tweetbot.png in Resources */ = {isa = PBXBuildFile; fileRef = EF754806195EE0510072C69E /* Tweetbot.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF7547E5195EE01C0072C69E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF7547CA195EE01C0072C69E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF7547D1195EE01C0072C69E;
+			remoteInfo = GoogleWearAlert;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF7547D2195EE01C0072C69E /* GoogleWearAlert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleWearAlert.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7547D6195EE01C0072C69E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7547D7195EE01C0072C69E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF7547DE195EE01C0072C69E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF7547E4195EE01C0072C69E /* GoogleWearAlertTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleWearAlertTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7547E9195EE01C0072C69E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7547EA195EE01C0072C69E /* GoogleWearAlertTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleWearAlertTests.swift; sourceTree = "<group>"; };
+		EF7547F5195EE02F0072C69E /* GoogleWearAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWearAlert.swift; sourceTree = "<group>"; };
+		EF7547F6195EE02F0072C69E /* GoogleWearAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleWearAlertView.swift; sourceTree = "<group>"; };
+		EF7547F8195EE02F0072C69E /* errorIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "errorIcon@2x.png"; sourceTree = "<group>"; };
+		EF7547F9195EE02F0072C69E /* messageIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "messageIcon@2x.png"; sourceTree = "<group>"; };
+		EF7547FA195EE02F0072C69E /* successIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "successIcon@2x.png"; sourceTree = "<group>"; };
+		EF7547FB195EE02F0072C69E /* warningIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warningIcon@2x.png"; sourceTree = "<group>"; };
+		EF754802195EE03C0072C69E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF754804195EE0480072C69E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EF754806195EE0510072C69E /* Tweetbot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tweetbot.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7547CF195EE01C0072C69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7547E1195EE01C0072C69E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF7547C9195EE01C0072C69E = {
+			isa = PBXGroup;
+			children = (
+				EF7547D4195EE01C0072C69E /* GoogleWearAlert */,
+				EF7547E7195EE01C0072C69E /* GoogleWearAlertTests */,
+				EF7547D3195EE01C0072C69E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7547D3195EE01C0072C69E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7547D2195EE01C0072C69E /* GoogleWearAlert.app */,
+				EF7547E4195EE01C0072C69E /* GoogleWearAlertTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7547D4195EE01C0072C69E /* GoogleWearAlert */ = {
+			isa = PBXGroup;
+			children = (
+				EF754804195EE0480072C69E /* Main.storyboard */,
+				EF754802195EE03C0072C69E /* ViewController.swift */,
+				EF7547F4195EE02F0072C69E /* GoogleWearAlertView */,
+				EF7547DE195EE01C0072C69E /* Images.xcassets */,
+				EF7547D5195EE01C0072C69E /* Supporting Files */,
+			);
+			path = GoogleWearAlert;
+			sourceTree = "<group>";
+		};
+		EF7547D5195EE01C0072C69E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7547D7195EE01C0072C69E /* AppDelegate.swift */,
+				EF754806195EE0510072C69E /* Tweetbot.png */,
+				EF7547D6195EE01C0072C69E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7547E7195EE01C0072C69E /* GoogleWearAlertTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF7547EA195EE01C0072C69E /* GoogleWearAlertTests.swift */,
+				EF7547E8195EE01C0072C69E /* Supporting Files */,
+			);
+			path = GoogleWearAlertTests;
+			sourceTree = "<group>";
+		};
+		EF7547E8195EE01C0072C69E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7547E9195EE01C0072C69E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7547F4195EE02F0072C69E /* GoogleWearAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				EF7547F5195EE02F0072C69E /* GoogleWearAlert.swift */,
+				EF7547F6195EE02F0072C69E /* GoogleWearAlertView.swift */,
+				EF7547F7195EE02F0072C69E /* Resources */,
+			);
+			path = GoogleWearAlertView;
+			sourceTree = "<group>";
+		};
+		EF7547F7195EE02F0072C69E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF7547F8195EE02F0072C69E /* errorIcon@2x.png */,
+				EF7547F9195EE02F0072C69E /* messageIcon@2x.png */,
+				EF7547FA195EE02F0072C69E /* successIcon@2x.png */,
+				EF7547FB195EE02F0072C69E /* warningIcon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7547D1195EE01C0072C69E /* GoogleWearAlert */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7547EE195EE01C0072C69E /* Build configuration list for PBXNativeTarget "GoogleWearAlert" */;
+			buildPhases = (
+				EF7547CE195EE01C0072C69E /* Sources */,
+				EF7547CF195EE01C0072C69E /* Frameworks */,
+				EF7547D0195EE01C0072C69E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleWearAlert;
+			productName = GoogleWearAlert;
+			productReference = EF7547D2195EE01C0072C69E /* GoogleWearAlert.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF7547E3195EE01C0072C69E /* GoogleWearAlertTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7547F1195EE01C0072C69E /* Build configuration list for PBXNativeTarget "GoogleWearAlertTests" */;
+			buildPhases = (
+				EF7547E0195EE01C0072C69E /* Sources */,
+				EF7547E1195EE01C0072C69E /* Frameworks */,
+				EF7547E2195EE01C0072C69E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF7547E6195EE01C0072C69E /* PBXTargetDependency */,
+			);
+			name = GoogleWearAlertTests;
+			productName = GoogleWearAlertTests;
+			productReference = EF7547E4195EE01C0072C69E /* GoogleWearAlertTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7547CA195EE01C0072C69E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ashley Robinson";
+				TargetAttributes = {
+					EF7547D1195EE01C0072C69E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					EF7547E3195EE01C0072C69E = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = EF7547D1195EE01C0072C69E;
+					};
+				};
+			};
+			buildConfigurationList = EF7547CD195EE01C0072C69E /* Build configuration list for PBXProject "GoogleWearAlert" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7547C9195EE01C0072C69E;
+			productRefGroup = EF7547D3195EE01C0072C69E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7547D1195EE01C0072C69E /* GoogleWearAlert */,
+				EF7547E3195EE01C0072C69E /* GoogleWearAlertTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7547D0195EE01C0072C69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7547FF195EE02F0072C69E /* messageIcon@2x.png in Resources */,
+				EF7547FE195EE02F0072C69E /* errorIcon@2x.png in Resources */,
+				EF7547DF195EE01C0072C69E /* Images.xcassets in Resources */,
+				EF754805195EE0480072C69E /* Main.storyboard in Resources */,
+				EF754801195EE02F0072C69E /* warningIcon@2x.png in Resources */,
+				EF754807195EE0510072C69E /* Tweetbot.png in Resources */,
+				EF754800195EE02F0072C69E /* successIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7547E2195EE01C0072C69E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7547CE195EE01C0072C69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7547FC195EE02F0072C69E /* GoogleWearAlert.swift in Sources */,
+				EF7547D8195EE01C0072C69E /* AppDelegate.swift in Sources */,
+				EF754803195EE03C0072C69E /* ViewController.swift in Sources */,
+				EF7547FD195EE02F0072C69E /* GoogleWearAlertView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF7547E0195EE01C0072C69E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7547EB195EE01C0072C69E /* GoogleWearAlertTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF7547E6195EE01C0072C69E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF7547D1195EE01C0072C69E /* GoogleWearAlert */;
+			targetProxy = EF7547E5195EE01C0072C69E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EF7547EC195EE01C0072C69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EF7547ED195EE01C0072C69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7547EF195EE01C0072C69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GoogleWearAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF7547F0195EE01C0072C69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GoogleWearAlert/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF7547F2195EE01C0072C69E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleWearAlert.app/GoogleWearAlert";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogleWearAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		EF7547F3195EE01C0072C69E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoogleWearAlert.app/GoogleWearAlert";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = GoogleWearAlertTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7547CD195EE01C0072C69E /* Build configuration list for PBXProject "GoogleWearAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7547EC195EE01C0072C69E /* Debug */,
+				EF7547ED195EE01C0072C69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7547EE195EE01C0072C69E /* Build configuration list for PBXNativeTarget "GoogleWearAlert" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7547EF195EE01C0072C69E /* Debug */,
+				EF7547F0195EE01C0072C69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF7547F1195EE01C0072C69E /* Build configuration list for PBXNativeTarget "GoogleWearAlertTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7547F2195EE01C0072C69E /* Debug */,
+				EF7547F3195EE01C0072C69E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7547CA195EE01C0072C69E /* Project object */;
+}
