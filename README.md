@@ -37,6 +37,10 @@ GoogleWearAlert.setDefaultViewController(self)
 
 ```
 
+Consecutive calls will result in the alerts being queued and presented after the previous one has been dismissed.
+
+Set canBeDismissedByUser to true to allow the user to tap to dismiss the alert.
+
 The following properties can be set:
 
 * **viewController**: The view controller to show the notification in. This might be the navigation controller.
