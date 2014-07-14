@@ -46,6 +46,7 @@ class GoogleWearAlert: NSObject {
     let springVelocity: CGFloat = 10
     
     @lazy var alertQueue: NSMutableArray = NSMutableArray()
+    let window: UIWindow = UIWindow()
     weak var defaultViewController:UIViewController?
     var alertActive:Bool?
     var timer: NSTimer?
@@ -93,7 +94,13 @@ class GoogleWearAlert: NSObject {
         
         var currentView = alertQueue.firstObject as GoogleWearAlertView
         currentView.transform = transform
-        currentView.viewController?.view.addSubview(currentView)
+        
+        window.windowLevel = UIWindowLevelAlert
+        window.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
+        var windowFrame = UIScreen.mainScreen().applicationFrame
+        window.frame = CGRectMake(windowFrame.origin.x, windowFrame.origin.y - 20, windowFrame.size.width, windowFrame.size.height + 20)
+        window.addSubview(currentView)
+        window.makeKeyAndVisible()
 
         UIView.animateWithDuration(presentAnimationDuration,
             delay: 0.0,
@@ -149,6 +156,7 @@ class GoogleWearAlert: NSObject {
                         (completion: Bool) in
                         
                         currentView.removeFromSuperview()
+                        self.window.removeFromSuperview()
                         if self.alertQueue.count > 0 { self.alertQueue.removeObjectAtIndex(0) }
                         self.alertActive = false
                         
@@ -157,22 +165,13 @@ class GoogleWearAlert: NSObject {
             })
     }
 
-    class func setDefaultViewController(controller: UIViewController) {
-        if GoogleWearAlert.sharedInstance.defaultViewController !== controller {
-            GoogleWearAlert.sharedInstance.defaultViewController = controller
-        }
-    }
-    
     func useDefaultController() -> UIViewController {
         
         if let defaultVC = defaultViewController {
             return defaultVC
         } else {
-            NSLog("GoogleWearMessage: It is recommended to set a custom defaultViewController that is used to display the notifications");
             defaultViewController = UIApplication.sharedApplication().keyWindow.rootViewController;
             return defaultViewController!
         }
     }
-    
-    
 }

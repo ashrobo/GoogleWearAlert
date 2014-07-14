@@ -18,8 +18,6 @@ class ViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
         
-        GoogleWearAlert.setDefaultViewController(self)
-        
         GoogleWearAlert.showAlert(title: "Success", type: .Success)
         
         GoogleWearAlert.showAlert(title:"Error", image:nil, type: .Error, duration: 2.0, inViewController: self)

@@ -37,7 +37,7 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
     /** The displayed title of this message */
     var title:NSString?
     
-    /** The view controller this message is displayed in */
+    /** The view controller this message is displayed in, only used to size the alert*/
     var viewController:UIViewController!
     
     /** The duration of the displayed message. If it is 0.0, it will automatically be calculated */
