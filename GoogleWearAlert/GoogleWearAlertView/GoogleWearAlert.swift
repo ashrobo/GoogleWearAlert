@@ -46,9 +46,9 @@ class GoogleWearAlert: NSObject {
     let springVelocity: CGFloat = 10
     
     @lazy var alertQueue: NSMutableArray = NSMutableArray()
-    let window: UIWindow = UIWindow()
+    var bgWindow: UIWindow = UIWindow();
     weak var defaultViewController:UIViewController?
-    var alertActive:Bool?
+    var alertActive:Bool = false
     var timer: NSTimer?
     
     class func showAlert(#title:String, type:GoogleWearAlertType) {
@@ -77,7 +77,7 @@ class GoogleWearAlert: NSObject {
         
         alertQueue.addObject(alert)
 
-        if !alertActive {
+        if alertActive == false {
             presentAlert()
         }
     }
@@ -95,12 +95,13 @@ class GoogleWearAlert: NSObject {
         var currentView = alertQueue.firstObject as GoogleWearAlertView
         currentView.transform = transform
         
-        window.windowLevel = UIWindowLevelAlert
-        window.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
+        bgWindow.windowLevel = UIWindowLevelAlert
+        bgWindow.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.1)
         var windowFrame = UIScreen.mainScreen().applicationFrame
-        window.frame = CGRectMake(windowFrame.origin.x, windowFrame.origin.y - 20, windowFrame.size.width, windowFrame.size.height + 20)
-        window.addSubview(currentView)
-        window.makeKeyAndVisible()
+        bgWindow.frame = CGRectMake(windowFrame.origin.x, windowFrame.origin.y - 20, windowFrame.size.width, windowFrame.size.height + 20)
+        bgWindow.hidden = true
+        bgWindow.addSubview(currentView)
+        bgWindow.makeKeyAndVisible()
 
         UIView.animateWithDuration(presentAnimationDuration,
             delay: 0.0,
@@ -108,7 +109,8 @@ class GoogleWearAlert: NSObject {
             initialSpringVelocity: springVelocity,
             options:.CurveEaseIn,
             animations: {
-                
+                self.bgWindow.alpha = 1.0
+                self.bgWindow.hidden = false;
                 currentView.transform = CGAffineTransformIdentity
             
             }, completion: {
@@ -148,7 +150,7 @@ class GoogleWearAlert: NSObject {
                     initialSpringVelocity: self.springVelocity,
                     options:.CurveLinear | .AllowUserInteraction,
                     animations: {
-                        
+                        self.bgWindow.alpha = 0.0
                         currentView.transform = CGAffineTransformMakeScale(0.1, 0.1)
                         currentView.alpha = 0.0
                         
@@ -156,8 +158,9 @@ class GoogleWearAlert: NSObject {
                         (completion: Bool) in
                         
                         currentView.removeFromSuperview()
-                        self.window.removeFromSuperview()
-                        if self.alertQueue.count > 0 { self.alertQueue.removeObjectAtIndex(0) }
+                        self.bgWindow.hidden = true
+                        
+                        self.alertQueue.removeObject(currentView)
                         self.alertActive = false
                         
                         if self.alertQueue.count > 0 { self.presentAlert() }

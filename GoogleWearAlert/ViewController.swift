@@ -26,5 +26,7 @@ class ViewController: UIViewController {
         
         GoogleWearAlert.showAlert(title: "Message", image: nil, type: .Message, duration: 2.0, inViewController: self, atPostion: .Bottom, canBeDismissedByUser: true)
     }
+
+    
 }
 
