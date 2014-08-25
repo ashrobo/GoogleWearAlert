@@ -1,6 +1,8 @@
 GoogleWearAlert
 ===============
 
+NOTE: Due to the volatility of the Swift language and other commitments this library is no longer actively maintained.
+
 An Android Wear style confirmation view for iOS - Written in Swift
 
 This library is not intended as fully fledged alert view replacement (it has no buttons) this confirmation view is ideal 
