@@ -53,8 +53,8 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
     var iconImage:UIImage?
     
     /** Internal properties needed to resize the view on device rotation properly */
-    @lazy var titleLabel: UILabel = UILabel()
-    @lazy var iconImageView: UIImageView = UIImageView()
+    lazy var titleLabel: UILabel = UILabel()
+    lazy var iconImageView: UIImageView = UIImageView()
     
     /** Inits the notification view. Do not call this from outside this library.
     @param title The text of the notification view
@@ -66,6 +66,10 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
     @param dismissingEnabled Should this message be dismissed when the user taps it?
     */
     
+    required init(coder aDecoder: NSCoder!) {
+	super.init(coder: aDecoder)
+    }
+
     init(title:String, image:UIImage?, type:GoogleWearAlertType, duration:Double, viewController:UIViewController, position:GoogleWearAlertPosition, canbeDismissedByUser:Bool) {
         
         self.title = title

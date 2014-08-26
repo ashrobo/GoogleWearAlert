@@ -45,7 +45,7 @@ class GoogleWearAlert: NSObject {
     let springDamping: CGFloat = 0.6
     let springVelocity: CGFloat = 10
     
-    @lazy var alertQueue: NSMutableArray = NSMutableArray()
+    lazy var alertQueue: NSMutableArray = NSMutableArray()
     var bgWindow: UIWindow = UIWindow();
     weak var defaultViewController:UIViewController?
     var alertActive:Bool = false
