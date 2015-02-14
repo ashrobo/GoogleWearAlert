@@ -45,7 +45,7 @@ class GoogleWearAlert: NSObject {
     let springDamping: CGFloat = 0.6
     let springVelocity: CGFloat = 10
     
-    @lazy var alertQueue: NSMutableArray = NSMutableArray()
+    lazy var alertQueue: NSMutableArray = NSMutableArray()
     var bgWindow: UIWindow = UIWindow();
     weak var defaultViewController:UIViewController?
     var alertActive:Bool = false
@@ -123,7 +123,7 @@ class GoogleWearAlert: NSObject {
     }
     
     func removeAlert(timer:NSTimer) {
-        var currentView = timer.userInfo.objectForKey("currentView")as GoogleWearAlertView
+        var currentView = timer.userInfo?.objectForKey("currentView")as GoogleWearAlertView
         removeCurrentAlert(currentView)
     }
     
@@ -173,7 +173,7 @@ class GoogleWearAlert: NSObject {
         if let defaultVC = defaultViewController {
             return defaultVC
         } else {
-            defaultViewController = UIApplication.sharedApplication().keyWindow.rootViewController;
+            defaultViewController = UIApplication.sharedApplication().keyWindow?.rootViewController;
             return defaultViewController!
         }
     }

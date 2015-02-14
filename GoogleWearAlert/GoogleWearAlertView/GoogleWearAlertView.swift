@@ -53,8 +53,8 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
     var iconImage:UIImage?
     
     /** Internal properties needed to resize the view on device rotation properly */
-    @lazy var titleLabel: UILabel = UILabel()
-    @lazy var iconImageView: UIImageView = UIImageView()
+    lazy var titleLabel: UILabel = UILabel()
+    lazy var iconImageView: UIImageView = UIImageView()
     
     /** Inits the notification view. Do not call this from outside this library.
     @param title The text of the notification view
@@ -67,14 +67,13 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
     */
     
     init(title:String, image:UIImage?, type:GoogleWearAlertType, duration:Double, viewController:UIViewController, position:GoogleWearAlertPosition, canbeDismissedByUser:Bool) {
+        super.init(frame: CGRectZero)
         
         self.title = title
         self.iconImage = image
         self.duration = duration
         self.viewController = viewController
         self.alertPosition = position
-        
-        super.init(frame: self.frame)
         
         // Setup background color and choose icon
         var imageProvided = image != nil
@@ -130,6 +129,11 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
             let tagGestureRecognizer = UITapGestureRecognizer(target:self, action: Selector("dismissAlert"))
             self.addGestureRecognizer(tagGestureRecognizer)
         }
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        NSException(name: "init from storyboard error", reason: "alert cannot be initalized from a storybaord", userInfo: nil).raise()
     }
     
     func dismissAlert() {
