@@ -1,8 +1,6 @@
 GoogleWearAlert
 ===============
 
-NOTE: Due to the volatility of the Swift language and other commitments this library is no longer actively maintained.
-
 Objective-C version kindly written by dimohamdy - https://github.com/dimohamdy/GoogleWearAlert
 
 An Android Wear style confirmation view for iOS - Written in Swift
