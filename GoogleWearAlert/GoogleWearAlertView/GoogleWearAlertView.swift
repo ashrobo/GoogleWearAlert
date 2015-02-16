@@ -66,6 +66,10 @@ class GoogleWearAlertView: UIView, UIGestureRecognizerDelegate {
     @param dismissingEnabled Should this message be dismissed when the user taps it?
     */
     
+    required init(coder aDecoder: NSCoder!) {
+	super.init(coder: aDecoder)
+    }
+
     init(title:String, image:UIImage?, type:GoogleWearAlertType, duration:Double, viewController:UIViewController, position:GoogleWearAlertPosition, canbeDismissedByUser:Bool) {
         super.init(frame: CGRectZero)
         
