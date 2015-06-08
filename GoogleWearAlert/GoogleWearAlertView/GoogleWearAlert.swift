@@ -92,7 +92,7 @@ class GoogleWearAlert: NSObject {
         var rotate = CGAffineTransformRotate(scale, CGFloat(M_PI))
         var transform = CGAffineTransformConcat(scale, rotate)
         
-        var currentView = alertQueue.firstObject as GoogleWearAlertView
+        var currentView = alertQueue.firstObject as! GoogleWearAlertView
         currentView.transform = transform
         
         bgWindow.windowLevel = UIWindowLevelAlert
@@ -102,6 +102,9 @@ class GoogleWearAlert: NSObject {
         bgWindow.hidden = true
         bgWindow.addSubview(currentView)
         bgWindow.makeKeyAndVisible()
+        
+        // ios8 bug where a nil rootViewController on UIWindow causes its frame not to recalculate when the device's orientation changes
+        bgWindow.rootViewController = UIViewController()
 
         UIView.animateWithDuration(presentAnimationDuration,
             delay: 0.0,
@@ -123,7 +126,7 @@ class GoogleWearAlert: NSObject {
     }
     
     func removeAlert(timer:NSTimer) {
-        var currentView = timer.userInfo?.objectForKey("currentView")as GoogleWearAlertView
+        var currentView = timer.userInfo?.objectForKey("currentView")as! GoogleWearAlertView
         removeCurrentAlert(currentView)
     }
     
