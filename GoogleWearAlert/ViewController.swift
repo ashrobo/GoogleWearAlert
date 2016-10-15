@@ -15,16 +15,16 @@ class ViewController: UIViewController {
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        GoogleWearAlert.showAlert(title: "Success", type: .Success)
+        GoogleWearAlert.showAlert(title: "Success", .success)
         
-        GoogleWearAlert.showAlert(title:"Error", image:nil, type: .Error, duration: 2.0, inViewController: self)
+        GoogleWearAlert.showAlert(title:"Error", nil, type: .error, duration: 2.0, inViewController: self)
         
-        GoogleWearAlert.showAlert(title: "Warning", image: nil, type: .Warning, duration: 2.0, inViewController: self, atPostion: .Top, canBeDismissedByUser: true)
+        GoogleWearAlert.showAlert(title: "Warning", nil, type: .warning, duration: 2.0, inViewController: self, atPostion: .top, canBeDismissedByUser: true)
         
-        GoogleWearAlert.showAlert(title: "Message", image: nil, type: .Message, duration: 2.0, inViewController: self, atPostion: .Bottom, canBeDismissedByUser: true)
+        GoogleWearAlert.showAlert(title: "Message", nil, type: .message, duration: 2.0, inViewController: self, atPostion: .bottom, canBeDismissedByUser: true)
     }
 
     
